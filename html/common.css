@@ -1,0 +1,122 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  display: flex;
+  background-color:#DAEFB3;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1{
+  padding-top: 10px;
+  margin-left: 15%;
+}
+
+.header .logo{
+  width: 100px;
+  height: 100px;
+  margin-left: 100%;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  font-size: 30px;
+}
+#example1 {
+  border: 1px solid #1C2826;
+  padding: 2%;
+}
+#example1:hover{
+    box-shadow: 5px 2px gray;
+    background: #75a3a3;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+
+}
+#example1 h2{
+  font-family: Arial;
+  font-size:5vh;
+  font-weight: bolder;
+
+}
+#example1 form input{
+  padding:2%;
+  margin-left: 5%;
+}
+#example1 form label{
+  font-weight: 400!important;
+  font-family: sans-serif;
+}
+#example1 span{
+  font-size: 2.5rem;
+}
+/* Style the topnav links */
+.topnav {
+  text-align: center;
+}
+.topnav a {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #D64550;
+  color: white;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row{
+  background-image: url("./nit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+
+}
+.registerbtn{
+  position: relative;
+  margin: 5% 35%;
+  padding: 2%;
+  background: white;
+  width: 80px;
+  border: 5px 2px black!important;
+}
+.registerbtn:hover{
+  box-shadow: 1px 1px gray;
+  background: #D64550;
+  color:white;
+}
+.existing_usr_btn{
+  text-align: center;
+}
+</style>

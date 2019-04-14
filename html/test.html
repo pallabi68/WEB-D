@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>Student Registration</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="login_admin.css">
+	 <script src="myscripts.js"></script>
+</head>
+<style>
+
+
+</style>
+
+<body>
+
+	<div class="header">
+		<img src="https://img.collegepravesh.com/2013/06/NIT-Durgapur-Logo.png" style="float:left;width:10%;height:10%;" />
+		<h1>NATIONAL INSTITUTE OF TECHNOLOGY, DURGAPUR</h1>
+
+	</div>
+
+	<div class="topnav">
+		<a href="home.html">HOME</a>
+		<a href="test.html">STUDENT REGISTRATION</a>
+		<a href="login_admin_h.php">ADMIN LOGIN</a>
+		<a href="login_h.php">STUDENT LOGIN</a>
+		<a href="contact.html">CONTACT</a>
+	</div>
+
+	<div class="row">
+	         
+		<div class="column">
+                     
+		</div>
+
+		<div class="column" id="example1">
+			<br>
+			<br>
+
+			<link rel="stylesheet" type="text/css" href="stu_reg.css">
+			<form action="welcome.php" method="POST" enctype="multipart/form-data" >
+			<div id="time"></div>
+				<div class="container">
+				         
+					<div class="container heading">
+						<h3>Student Registration</h3>
+					</div>
+					<hr>
+					<div class="column" id='example2'>
+						<label for="name"><b>NAME :</b></label>
+						<input type="text" Enter your name: <input type="text" id="fname" onkeyup="return myFunction()"  placeholder="Enter your name" name="name" id="name" required><div id="na"></div>
+						<br>
+						<label for="registration_no"><b>REGISTRATION NO :</b></label>
+						<input type="text" placeholder="Enter Registration Number" name="registration_no" id="reg_no" onchange="check_reg()" required> <div id="rn"></div>
+						<br>
+						<label for="department"><b>DEPARTMENT :</b></label>
+						<select name="department" id="department">
+							<option value="IT">IT</option>
+							<option value="CSE">CSE</option>
+							<option value="BT">BT</option>
+							<option value="ME">ME</option>
+							<option value="MME">MME</option>
+							<option value="ECE">CE</option>
+							<option value="ECE">CVE</option>
+						</select>
+						<br><br>
+                                                <br><br><br><br><br><br>  
+
+						<label for="gender"><b>GENDER :</b></label>
+						<pig>
+						<input type="radio" name="gender" value="male"> Male<br>
+						<input type="radio" name="gender" value="female"> Female<br>
+						<input type="radio" name="gender" value="other"> Other
+						</pig>
+						<br>
+						<br>
+						<br><br>
+						<label for="email"><b>Email :</b></label>
+			<input type="text" placeholder="Enter Email"  id="email" onchange="return valid()" name="email" required>
+			                         <div id="em"></div>
+						<br>
+						<br>
+                                                <br>
+                                                <br>
+			<label for="dob"><b>DOB :</b></label>: <input type="date"  name="bday" id="dob" onchange="findage()">
+			<br><br>
+			<label><b>YOUR CURRENT AGE IS</b></label>
+								<div id="demo"></div>
+						<br><br>
+						<label for="contact_no"><b>CONTACT NO :</b></label>
+						<input type="text" placeholder="Ph no." name="contack_no" id="contact_no" 
+						onchange="check_no()" required><div id="ph"></div>
+						<br>
+						<br>
+						<label for="hobby"><b>HOBBY :</b></label>
+						
+						
+				<!		<select name="hobby" id="hobby"  onchange="hobby_p()" >
+				                       <dog >
+							<input type="checkbox"  name="hobby"  value="singing">SINGING<br>
+							<input type="checkbox"  name="hobby" value="dancing">DANCING<br>
+							<input type="checkbox"  name="hobby" value="gym">GYM/WORKOUT<br>
+							<input type="checkbox"  name="hobby" value="photo">PHOTOGRAPHY<br>
+							<input type="checkbox"  name="hobby" value="draw">DRAWING<br>
+						       <input type="checkbox"  name="hobby"  id="hobby" onclick="hobby_validate()"   value="other" >OTHER<br>
+						        </dog>
+						<div id="hobby_o"  style="display:none">
+						<br><br>
+						<label ><b>YOUR'sHOBBY :</b></label>
+						<!<input type="textarea" name="hobby" ></input>
+						<textarea rows="4" cols="50" name="hobby"></textarea>
+						</div>
+						<br>
+						<br>
+						<label for="corres_address"><b>CORRESPONDANCE ADDRESS :</b></label>
+						<input type="text" name="corres_address" placeholder="correspondance address" >
+						<br>
+						<br>
+						<label for="perm_address"><b>PERMANENT ADDRESS :</b></label>
+
+						<input type="text" name="perm_address" placeholder="Permanent addr">
+						<br>
+						<br>
+						<label for="current_sem" ><b>CURRENT SEM :</b></label>
+						<select name="current_sem" id="current_sem" >
+						       <option value="1">1st</option>
+							<option value="2">2nd</option>
+							<option value="3">3rd</option>
+							<option value="4">4th</option>
+							<option value="5">5th</option>
+							<option value="6">6th</option>
+							<option value="7">7th</option>
+							<option value="8">8th</option>
+						</select>
+								<br>
+								<br><br><br>
+								<table id="customers"> </table>	
+				                
+				                                <br><br>
+								<label><b>ENTER YOUR SEMESTER GRADES<b></label>
+								<button type="button" onclick="loadDoc()">click</button>
+								<br><br><br>
+								
+								<br><br><br>
+								<label for="imgfile"><b>UPLOAD YOUR PHOTO :</b></label>
+								<input type="file" name="image" id="image" accept="image/png, image/jpeg">
+								<br>
+								<br>
+
+								<label for="cv"><b>UPLOAD YOUR CV:</b></label>
+								<input type="file" id="cv" name="cv" accept="image/*, .pdf">
+								<br>
+								<br>
+								
+
+								<label for="password"><b>PASSWORD : </b></label>
+<input type="password"  name="password"  onchange="return validate_pass()" /><br><br>
+                                                                <div id="pass"></div>
+
+								<label for="confirm_password"><b>CONFIRM PASSWORD :</b></label>
+<input type="password" name="confirm_password" id="txtConfirmPassword" onchange="return Validate()" />
+                                                                <div id="ma"></div>
+						<input type="submit" id="btnSubmit" class="registerbtn" value="Submit" onclick="return Validate()"/>		
+								
+					</div>
+					<div class="column"></div>
+						
+		
+					
+				</div>
+			</form>
+
+
+</body>
+
+
+</html>

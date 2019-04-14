@@ -1,0 +1,125 @@
+* {box-sizing: border-box}
+label { display: inline-block; width: 210px; text-align: right; }
+.topnav{
+  text-align: center;
+  font-size: 25px;
+}
+.heading {
+  text-align: center;
+  background-color: #2CAF53;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+a {
+  color: dodgerblue;
+}
+input[type=text], input[type=password]  {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=textarea] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.signin {
+  background-color: #f1f1f3;
+  text-align: center;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #2CAF53;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+textarea {
+  display: inline-block;
+  float: left;
+}
+pig {
+  display: inline-block;
+  float: left;
+}
+
+dog {
+  display: inline-block;
+  float: left;
+}
+#h {
+   float: right;
+}
+select {
+  display: inline-block;
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
